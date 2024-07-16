@@ -5,22 +5,22 @@ id_pattern = re.compile(r'^.\d+$')
 
 class Config(object):
     # pyro client config
-    API_ID    = os.environ.get("API_ID", "")
-    API_HASH  = os.environ.get("API_HASH", "")
-    BOT_TOKEN = os.environ.get("BOT_TOKEN", "") 
+    API_ID    = os.environ.get("API_ID", "25797857")
+    API_HASH  = os.environ.get("API_HASH", "77717127ece56fac64ebea6250db8bb7")
+    BOT_TOKEN = os.environ.get("BOT_TOKEN", "7444018073:AAHIYXGx9XrkyoqM8hOn_U7UP46Vhqex7SA") 
    
     # database config
-    DB_NAME = os.environ.get("DB_NAME","")     
-    DB_URL  = os.environ.get("DB_URL","")
+    DB_NAME = os.environ.get("DB_NAME","AtlasCluster")     
+    DB_URL  = os.environ.get("DB_URL","mongodb+srv://joevaasdb:animatedboy@atlascluster.pwmplmk.mongodb.net/?retryWrites=true&w=majority&appName=AtlasCluster")
  
     # other configs
     BOT_UPTIME  = time.time()
     START_PIC   = os.environ.get("START_PIC", "")
-    ADMIN = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '').split()]
+    ADMIN = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '6693549185').split()]
 
     # channels logs
     FORCE_SUB   = os.environ.get("FORCE_SUB", "") 
-    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", ""))
+    LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002151806170"))
 
     # wes response configuration     
     WEBHOOK = bool(os.environ.get("WEBHOOK", True))
