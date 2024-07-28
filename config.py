@@ -10,8 +10,8 @@ class Config(object):
     BOT_TOKEN = os.environ.get("BOT_TOKEN", "7444018073:AAHIYXGx9XrkyoqM8hOn_U7UP46Vhqex7SA") 
    
     # database config
-    DB_NAME = os.environ.get("DB_NAME","AtlasCluster")     
-    DB_URL  = os.environ.get("DB_URL","mongodb+srv://joevaasdb:animatedboy@atlascluster.pwmplmk.mongodb.net/?retryWrites=true&w=majority&appName=AtlasCluster")
+    DB_NAME = os.environ.get("DB_NAME","TAF_Rename")     
+    DB_URL  = os.environ.get("DB_URL","mongodb+srv://Venkat3823:Venkat3823@cluster0.ig0oc9y.mongodb.net/?retryWrites=true&w=majority")
  
     # other configs
     BOT_UPTIME  = time.time()
@@ -19,7 +19,7 @@ class Config(object):
     ADMIN = [int(admin) if id_pattern.search(admin) else admin for admin in os.environ.get('ADMIN', '6693549185').split()]
 
     # channels logs
-    FORCE_SUB   = os.environ.get("FORCE_SUB", "") 
+    FORCE_SUB   = os.environ.get("FORCE_SUB", "-1002005092018") 
     LOG_CHANNEL = int(os.environ.get("LOG_CHANNEL", "-1002151806170"))
 
     # wes response configuration     
@@ -44,12 +44,12 @@ class Txt(object):
     ABOUT_TXT = """
 ╭───────────────⍟
 ├<b>🤖 My Name</b> : {}
-├<b>🖥️ Developer</b> : <a href=https://t.me/Madflix_Bots>Madflix Botz</a> 
-├<b>👨‍💻 Programer</b> : <a href=https://t.me/MadflixOfficials>Jishu Developer</a>
+├<b>🖥️ Developer</b> : <a href=https://t.me/Tamil_Anime_Files Botz</a> 
+├<b>👨‍💻 Programer</b> : <a https://t.me/Tamil_Aime_Files Developer</a>
 ├<b>📕 Library</b> : <a href=https://github.com/pyrogram>Pyrogram</a>
 ├<b>✏️ Language</b> : <a href=https://www.python.org>Python 3</a>
 ├<b>💾 Database</b> : <a href=https://cloud.mongodb.com>Mongo DB</a>
-├<b>📊 Build Version</b> : <a href=https://instagram.com/jishu.editz>Rename v4.5.0</a></b>     
+├<b>📊 Build Version</b> : <a href=https://t.me/Tamil_Anime_Files>Rename v4.5.0</a></b>     
 ╰───────────────⍟
 """
 
